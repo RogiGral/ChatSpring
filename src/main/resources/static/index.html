@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="chat.js"></script>
+<script src="stomp.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Chat</title>
+</head>
+<body onload="connect()">
+<div class="grid">
+    <div class="grid__element grid__element--1">
+
+        <p id="inputMessage">
+            Let's Talk
+        </p>
+    </div>
+    <div class="grid__element grid__element--2">
+        <input id="user" placeholder="Twoje imie" type="text"/>
+    </div>
+    <div class="grid__element grid__element--3">
+        <textarea id="messageToSend" placeholder="Twoja Wiadomość" type="text"></textarea>
+    </div>
+    <div class="grid__element grid__element--4">
+        <button id="send" onclick="sendMessage()">Wyslij</button>
+    </div>
+    <div class="grid__element grid__element--5">
+        <p id="response"></p>
+    </div>
+</div>
+
+
+</body>
+</html>
